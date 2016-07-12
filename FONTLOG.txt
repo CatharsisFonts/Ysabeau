@@ -1,0 +1,40 @@
+FONTLOG for the Eau de Garamond font family
+
+
+This file provides detailed information on the Eau de Garamond Font Software.
+This information should be distributed along with the Eau de Garamond fonts
+and any derivative works.
+
+Basic Font Information
+
+Eau de Garamond is a Unicode sans-serif typeface aiming to encompass the Adobe Latin
+4 range of characters as well as the Cyrillic script.  It is inspired by 
+Claude Garamont's timeless designs.  A series of weights spanning from Hairline to Bold are going to be offered, and true Italics are foreseen for all weights.  The ChangeLog below indicates the degree of completion of the current build.
+
+Eau de Garamond combines the robustness of a low-contrast sans with the time-honored legible shapes of the Garamond typefaces, allowing it to perform equally well at large sizes and for running text at reasonable sizes. Note that since the adherence to the Garamond flavor and its generous proportions is the main design goal, this typeface is not optimized for small font sizes or low-resolution screens.
+  
+Documentation can be found at the Eau de Garamond GitHub page:
+https://github.com/CatharsisFonts/EauDeGaramond
+
+To contribute to the project, contact Christian Thalmann (see below).
+
+
+
+ChangeLog
+
+2016-07-12: First release on GitHub.
+First version of the Roman cut in 2.5 masters (Hairline, Bold, intermediate layer where necessary) including small caps completed. No Cyrillic or Italics yet.
+(Christian Thalmann)
+
+
+
+Acknowledgements
+
+If you make modifications be sure to add your name (N), email (E), web-address
+(if you have one) (W) and description (D). This list is in alphabetical order.
+
+N: Christian Thalmann (Catharsis Fonts)
+E: christian.d.thalmann@gmail.com
+W: http://www.myfonts.com/foundry/Catharsis_Fonts/
+D: Creator of the Eau de Garamond type family
+
