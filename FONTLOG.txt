@@ -22,7 +22,7 @@ To contribute to the project, contact Christian Thalmann (see below).
 
 ChangeLog
 
-2016-07-12: First release on GitHub.
+2016-07-12: First work-in-progress release on GitHub.
 First version of the Roman cut in 2.5 masters (Hairline, Bold, intermediate layer where necessary) including small caps completed. No Cyrillic or Italics yet.
 (Christian Thalmann)
 
