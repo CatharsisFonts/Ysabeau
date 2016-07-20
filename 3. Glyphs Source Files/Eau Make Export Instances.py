@@ -30,8 +30,8 @@ suffix = ".lf"
 allLFGlyphNames = [ g.name for g in Font.glyphs if g.name.endswith(suffix) ]
 renameGlyphs3 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in allLFGlyphNames ]
 
-
-decomposeGlyphs = all01names + all02names + allLFGlyphNames
+#decomposeGlyphs = all01names + allLFGlyphNames
+decomposeGlyphs = [g.name for g in Font.glyphs]
 
 for thisInstance in Font.instances:
 	parameterFamilyName = thisInstance.customValueForKey_("familyName")
@@ -55,7 +55,8 @@ all02names = [ g.name for g in Font.glyphs if (g.name.find(suffix) > 0) ]
 renameGlyphs2 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in all02names ]
 renameGlyphsParameterKey = "Rename Glyphs"
 
-decomposeGlyphs = all02names
+#decomposeGlyphs = all02names
+decomposeGlyphs = [g.name for g in Font.glyphs]
 
 for thisInstance in Font.instances:
 	parameterFamilyName = thisInstance.customValueForKey_("familyName")
@@ -77,7 +78,8 @@ Font = Glyphs.font
 allSCnames = [ g.name for g in Font.glyphs if (g.name.find(".sc") > 0) ]
 renameSC = [ "%s=%s" % ( x, x.replace(".sc","") ) for x in allSCnames ]
 
-decomposeGlyphs = allSCnames
+#decomposeGlyphs = allSCnames
+decomposeGlyphs = [g.name for g in Font.glyphs]
 
 for thisInstance in Font.instances:
 	parameterFamilyName = thisInstance.customValueForKey_("familyName")
