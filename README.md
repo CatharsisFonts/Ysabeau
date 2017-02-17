@@ -4,7 +4,7 @@ Eau de Garamond is a free display type family developed by Christian Thalmann ([
 
 Any feedback, bug reports, test results, and suggestions for additions are very welcome. You can contact me using the [Eau de Garamond issue tracker][4]. 
 
-If you like Eau de Garamond, please help spread the word via the social media of your choice. You might also be interested in my other typefaces on [MyFonts][1] and in my other free type family [Cormorant][2]
+If you like Eau de Garamond, please help spread the word via the social media of your choice. You might also be interested in my other typefaces on [MyFonts][1] and in my other free type family [Cormorant][3]
 
 ### Installation
 
@@ -24,13 +24,13 @@ The Eau de Garamond typeface and all its associated font files are free software
  
 Eau de Garamond has been conceived, drawn, spaced, kerned, programmed, interpolated, and produced in its entirety by myself (Christian Thalmann, [Catharsis Fonts][1]). I did all the work with [Glyphs][2], which I consider the world's best font editing software. It's not free, but it's worth every penny ten times over; I cannot recommend it enough. I used the public beta version of the RMX Harmonizer plug-in to ensure curve quality.
  
-While this project was heavily inspired by [Claude Garamont][6]'s immortal legacy, I did not use any specific font as a starting point or direct reference for my designs. Most glyphs were drawn from scratch, using the source files for my previous Garamond-flavored typeface [Cormorant][2] as a starting point to save time on defining kerning classes and OpenType coding. When I needed guidance regarding the Garamond solution on a specific character, I usually looked at the free typeface [«EB Garamond» by Georg Duffner][13].
+While this project was heavily inspired by [Claude Garamont][6]'s immortal legacy, I did not use any specific font as a starting point or direct reference for my designs. Most glyphs were drawn from scratch, using the source files for my previous Garamond-flavored typeface [Cormorant][3] as a starting point to save time on defining kerning classes and OpenType coding. When I needed guidance regarding the Garamond solution on a specific character, I usually looked at the free typeface [«EB Garamond» by Georg Duffner][13].
  
 I am very grateful to the creative souls on the [TypeDrawers][7] forum, the [Typografie.info][11] forum, and the (late?) [Typophile][8] forum for teaching me all I know about type design in the first place, and for providing me with a large amount of excellent feedback on Eau de Garamond. This goes in particular for Jasper de Waard and Pablo Impallari, who were particularly generous with their help. Likewise, my gratitude goes to the tireless folks at [Glyphs][2] — in particular Rainer Erich Scheichelbauer (Mekka Blue, [Schriftlabor][9]) and Georg Seifert — for the creation and support of their magnificent engine. 
 
 [1]: https://www.myfonts.com/foundry/Catharsis_Fonts
 [2]: https://glyphsapp.com
-[2]: https://github.com/CatharsisFonts/Cormorant/
+[3]: https://github.com/CatharsisFonts/Cormorant/
 [4]: https://github.com/CatharsisFonts/EauDeGaramond/issues/
 [5]: https://github.com/CatharsisFonts/EauDeGaramond/releases/latest
 [6]: https://en.wikipedia.org/wiki/Claude_Garamond
