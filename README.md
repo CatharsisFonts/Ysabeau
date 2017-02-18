@@ -4,7 +4,7 @@ Eau de Garamond is a free display type family developed by Christian Thalmann ([
 
 Any feedback, bug reports, test results, and suggestions for additions are very welcome. You can contact me using the [Eau de Garamond issue tracker][4]. 
 
-If you like Eau de Garamond, please help spread the word via the social media of your choice. You might also be interested in my other typefaces on [MyFonts][1] and in my other free type family [Cormorant][3]
+If you like Eau de Garamond, please help spread the word via the social media of your choice. You might also be interested in my other typefaces on [MyFonts][1] and in my other free type family [Cormorant][3].
 
 ### Installation
 
