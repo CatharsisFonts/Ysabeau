@@ -25,17 +25,26 @@ for x in forbidden:
 		
 renameGlyphs2 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in good02names ]
 
+suffix = ".ss03"
+all03names = [ g.name for g in Font.glyphs if (g.name.find(suffix) > 0) ]
+good03names = all03names
+for x in forbidden:
+	if x in all03names: 
+		good03names.remove(x)
+		
+renameGlyphs3 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in good03names ]
+
 
 forbidden = all01names
 forbidden = [ x.replace(".ss01", ".loclBGR") for x in forbidden ]
 
 suffix = ".loclBGR"
 allBGRnames = [ g.name for g in Font.glyphs if (g.name.find(suffix) > 0) ]		
-renameGlyphs3 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in allBGRnames ]
+renameGlyphs4 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in allBGRnames ]
 
 suffix = ".lf"
 allLFGlyphNames = [ g.name for g in Font.glyphs if g.name.endswith(suffix) ]
-renameGlyphs4 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in allLFGlyphNames ]
+renameGlyphs5 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in allLFGlyphNames ]
 
 #decomposeGlyphs = all01names + allLFGlyphNames
 decomposeGlyphs = [g.name for g in Font.glyphs]
@@ -48,7 +57,7 @@ for thisInstance in Font.instances:
 		familyName = Font.familyName
 	if familyName.endswith("Infant"):
 		thisInstance.removeObjectFromCustomParametersForKey_( renameGlyphsParameterKey )
-		thisInstance.setCustomParameter_forKey_( renameGlyphs1 + renameGlyphs2 + renameGlyphs3 + renameGlyphs4, renameGlyphsParameterKey )
+		thisInstance.setCustomParameter_forKey_( renameGlyphs1 + renameGlyphs2 + renameGlyphs3 + renameGlyphs4 + renameGlyphs5, renameGlyphsParameterKey )
 		thisInstance.setCustomParameter_forKey_( ["ss01", "ss02", "lnum", "locl"], "Remove Features" )
 		thisInstance.removeObjectFromCustomParametersForKey_( "Decompose Glyphs" )
 		thisInstance.setCustomParameter_forKey_( decomposeGlyphs, "Decompose Glyphs" )

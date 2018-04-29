@@ -7,7 +7,7 @@ Eau de Garamond Batch Generate Fonts.
 
 fileFolder = "~/Documents/Typography/EauDeGaramond/GitHub/3. Glyphs Source Files/"
 
-otf_path = "~/Documents/Typography/EauDeGaramond/GitHub/2. OpenType Files/"
+otf_path = "~/Documents/Typography/EauDeGaramond/GitHub/2. OpenType Font Files/"
 ttf_path = "~/Documents/Typography/EauDeGaramond/GitHub/1. TrueType Font Files/"
 
 OTF_AutoHint = True
