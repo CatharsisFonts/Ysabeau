@@ -1,6 +1,6 @@
 # The Eau de Garamond Typeface Project
 
-Eau de Garamond is a free display type family developed by Christian Thalmann ([Catharsis Fonts][1]).  It is open source, and all its working files (in [Glyphs][2] format) are available from this repository. If you wish to work with Eau de Garamond in a different font editor (which I wouldn't recommend), I can provide you with UFO versions of those files instead.
+Eau de Garamond is a free type family developed by Christian Thalmann ([Catharsis Fonts][1]). It combines the time-honored and supremely readable letterforms of the Garamond legacy with the clean crispness of a low-contrast sans serif, rendering it suitable for body copy as well as display. It is open source, and all its working files (in [Glyphs][2] format) are available from this repository. If you wish to work with Eau de Garamond in a different font editor (which I wouldn't recommend), I can provide you with UFO versions of those files instead.
 
 Any feedback, bug reports, test results, and suggestions for additions are very welcome. You can contact me using the [Eau de Garamond issue tracker][4]. 
 
