@@ -2,7 +2,7 @@
 
 Ysabeau is a free type family developed by Christian Thalmann ([Catharsis Fonts][1]). It combines the time-honored and supremely readable letterforms of the Garamond legacy with the clean crispness of a low-contrast sans serif, rendering it well suited for body copy as well as display. It is open source, and all its working files (in [Glyphs][2] format) are available from this repository. If you wish to work with Ysabeau in a different font editor (which I wouldn't recommend), I can provide you with UFO versions of those files instead.
 
-Any feedback, bug reports, test results, and suggestions for additions are very welcome. You can contact me using the [Eau de Garamond issue tracker][4]. 
+Any feedback, bug reports, test results, and suggestions for additions are very welcome. You can contact me using the [Ysabeau issue tracker][4]. 
 
 If you like Ysabeau, please help spread the word via the social media of your choice. You might also be interested in my other typefaces on [MyFonts][1] and in my other free type family [Cormorant][3].
 
@@ -31,13 +31,13 @@ I am very grateful to the creative souls on the [TypeDrawers][7] forum, the [Typ
 [1]: https://www.myfonts.com/foundry/Catharsis_Fonts
 [2]: https://glyphsapp.com
 [3]: https://github.com/CatharsisFonts/Cormorant/
-[4]: https://github.com/CatharsisFonts/EauDeGaramond/issues/
-[5]: https://github.com/CatharsisFonts/EauDeGaramond/releases/latest
+[4]: https://github.com/CatharsisFonts/Ysabeau/issues
+[5]: https://github.com/CatharsisFonts/Ysabeau/releases/latest
 [6]: https://en.wikipedia.org/wiki/Claude_Garamond
-[7]: http://typedrawers.com
-[8]: http://typophile.com
-[9]: http://schriftlabor.at
-[10]: http://scripts.sil.org/OFL
-[11]: http://typografie.info
+[7]: https://typedrawers.com
+[8]: https://typophile.com
+[9]: https://schriftlabor.at
+[10]: https://scripts.sil.org/OFL
+[11]: https://typografie.info
 [12]: https://fonts.google.com
 [13]: http://www.georgduffner.at/ebgaramond/
