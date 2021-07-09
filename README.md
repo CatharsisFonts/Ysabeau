@@ -6,6 +6,16 @@ Any feedback, bug reports, test results, and suggestions for additions are very 
 
 If you like Ysabeau, please help spread the word via the social media of your choice. You might also be interested in my other typefaces on [MyFonts][1] and in my other free type family [Cormorant][3].
 
+### Styles
+
+Apart from the default cut of the Ysabeau typeface, the following spin-off fonts are available for download:
+
+* Office: Promotes the OpenType features SS02, LNUM, and TNUM to default. This suppresses the contextual use of long and superlong Q, turns the slanted hyphens horizontal, and replaces the old-style figures with tabular lining figures.
+* Infant: Promotes SS01, loclBGR, and LNUM to default. This activates single-storey designs for a and g, a script y, a tailed l, Bulgarian Cyrillic forms, and proportional lining figures.
+* SC: Promotes SMCP to default. This activates smallcaps.
+
+The spin-off fonts are meant for convenience in environments without reliable OpenType support. In professional settings, it is recommended to use the base fonts and to activate the desired OpenType features.
+
 ### Installation
 
 If you wish to use the Ysabeau type family on your computer, simply download the "Ysabeau_Install" ZIP file from the [latest release][5], unpack it, and install the TrueType font files (.ttf) as appropriate for your operating system.
