@@ -50,17 +50,13 @@ renameGlyphs5 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in allLFGlyphNames
 decomposeGlyphs = [g.name for g in Font.glyphs]
 
 for thisInstance in Font.instances:
-	parameterFamilyName = thisInstance.customValueForKey_("familyName")
-	if parameterFamilyName:
-		familyName = parameterFamilyName
-	else:
-		familyName = Font.familyName
-	if familyName.endswith("Infant"):
-		thisInstance.removeObjectFromCustomParametersForKey_( renameGlyphsParameterKey )
-		thisInstance.setCustomParameter_forKey_( renameGlyphs1 + renameGlyphs2 + renameGlyphs3 + renameGlyphs4 + renameGlyphs5, renameGlyphsParameterKey )
-		thisInstance.setCustomParameter_forKey_( ["ss01", "ss02", "lnum", "locl"], "Remove Features" )
-		thisInstance.removeObjectFromCustomParametersForKey_( "Decompose Glyphs" )
-		thisInstance.setCustomParameter_forKey_( decomposeGlyphs, "Decompose Glyphs" )
+	if thisInstance.familyName.endswith("Infant"):
+		print(thisInstance.familyName + " " + thisInstance.name)
+		del(thisInstance.customParameters["Rename Glyphs"])
+		thisInstance.customParameters["Rename Glyphs"] = renameGlyphs1 + renameGlyphs2 + renameGlyphs3 + renameGlyphs4 + renameGlyphs5
+		thisInstance.customParameters["Remove Features"] = ["ss01", "ss02", "lnum", "locl"]
+		del(thisInstance.customParameters["Decompose Glyphs"])
+		thisInstance.customParameters["Decompose Glyphs"] = decomposeGlyphs
 
 
 # Office
@@ -74,20 +70,15 @@ suffix = ".tf"
 allTFnames = [ g.name for g in Font.glyphs if (g.name.find(suffix) > 0) ]
 renameGlyphs2 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in allTFnames ]
 
-renameGlyphsParameterKey = "Rename Glyphs"
-
 #decomposeGlyphs = all02names
 decomposeGlyphs = [g.name for g in Font.glyphs]
 
 for thisInstance in Font.instances:
-	parameterFamilyName = thisInstance.customValueForKey_("familyName")
-	if parameterFamilyName:
-		familyName = parameterFamilyName
-	else:
-		familyName = Font.familyName
-	if familyName.endswith("Office"):
-		thisInstance.removeObjectFromCustomParametersForKey_( renameGlyphsParameterKey )
-		thisInstance.setCustomParameter_forKey_( renameGlyphs1 + renameGlyphs2, renameGlyphsParameterKey )
-		thisInstance.setCustomParameter_forKey_( ["ss02", "tnum"], "Remove Features" )
-		thisInstance.removeObjectFromCustomParametersForKey_( "Decompose Glyphs" )
-		thisInstance.setCustomParameter_forKey_( decomposeGlyphs, "Decompose Glyphs" )
+	if thisInstance.familyName.endswith("Office"):
+		print(thisInstance.familyName + " " + thisInstance.name)
+		del(thisInstance.customParameters["Rename Glyphs"])
+		thisInstance.customParameters["Rename Glyphs"] = renameGlyphs1 + renameGlyphs2
+		thisInstance.customParameters["Remove Features"] = ["ss02", "tnum"]
+		del(thisInstance.customParameters["Decompose Glyphs"])
+		thisInstance.customParameters["Decompose Glyphs"] = decomposeGlyphs
+
