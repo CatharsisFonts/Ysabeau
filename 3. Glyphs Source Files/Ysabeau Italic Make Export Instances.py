@@ -4,37 +4,6 @@
 
 import GlyphsApp
 
-
-# Infant
-Font = Glyphs.font
-
-suffix = ".ss01"
-all01names = [ g.name for g in Font.glyphs if (g.name.find(suffix) > 0) ]
-renameGlyphs1 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in all01names ]
-renameGlyphsParameterKey = "Rename Glyphs"
-
-forbidden = all01names
-forbidden = [ x.replace(".ss01", ".ss02") for x in forbidden ]
-
-suffix = ".ss02"
-all02names = [ g.name for g in Font.glyphs if (g.name.find(suffix) > 0) ]
-good02names = all02names
-for x in forbidden:
-	if x in all02names: 
-		good02names.remove(x)
-		
-renameGlyphs2 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in good02names ]
-
-suffix = ".ss03"
-all03names = [ g.name for g in Font.glyphs if (g.name.find(suffix) > 0) ]
-good03names = all03names
-for x in forbidden:
-	if x in all03names: 
-		good03names.remove(x)
-		
-renameGlyphs3 = [ "%s=%s" % ( x, x.replace(suffix,"") ) for x in good03names ]
-
-
 forbidden = all01names
 forbidden = [ x.replace(".ss01", ".loclBGR") for x in forbidden ]
 
@@ -81,4 +50,5 @@ for thisInstance in Font.instances:
 		thisInstance.customParameters["Remove Features"] = ["ss02", "tnum"]
 		del(thisInstance.customParameters["Decompose Glyphs"])
 		thisInstance.customParameters["Decompose Glyphs"] = decomposeGlyphs
+
 
