@@ -13,4 +13,6 @@
 Andreas Stötzner <as@signographie.de>
 Alexei Vanyashin <a@cyreal.org>
 Irene Vlachou <irenevlachou.type@gmail.com>
+Dave Crossland <dcrossland@google.com>
+Thomas Linard <thlinard@gmail.com>
 Rosalie Wagner <mail@rosaliewagner.com>
