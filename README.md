@@ -1,3 +1,5 @@
+![Banner](documentation/Ysabeau_Banner.png)
+
 # The Ysabeau Typeface Project (formerly «Eau de Garamond»)
 
 Ysabeau is a free type family developed by Christian Thalmann ([Catharsis Fonts][1]). It combines the time-honored and supremely readable letterforms of the Garamond legacy with the clean crispness of a low-contrast sans serif, rendering it well suited for body copy as well as display. It is open source, and all its working files (in [Glyphs][2] format) are available from this repository. If you wish to work with Ysabeau in a different font editor (which I wouldn't recommend), I can provide you with UFO versions of those files instead.
