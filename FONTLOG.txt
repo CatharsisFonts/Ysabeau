@@ -18,6 +18,9 @@ To contribute to the project, contact Christian Thalmann (see below).
 
 ChangeLog
 
+2023-01-01 (v1.004)
+Changed the weight class values to conform to Google Fonts guidelines. The heaviest 9 weights have been assigned to weight classes 100--900, whereas the lightest three were arbitrarily called 1, 25, and 50. While this prohibits the latter from being ingested into Google Fonts as instances, they can still be accessed via the variable font, or downloaded from GitHub.
+
 2019-11-15 (v0.008)
 Noted inconsistency in vertical metrics between Upright and Italic, so added some vertical metric info into the masters as per the Glyphs tutorial.  
 
