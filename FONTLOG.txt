@@ -18,6 +18,9 @@ To contribute to the project, contact Christian Thalmann (see below).
 
 ChangeLog
 
+2023-02-02 (v2.000)
+Had to change the weight class values and instance names again because the v1.004 ones did not, in fact, conform to Google Fonts guidelines. The lightest two weights are now called ExtraThin and Thin and assigned to weight classes 1 and 50, whereas the heaviest weight is called ExtraBlack and assigned to weight class 1000.
+
 2023-01-01 (v1.004)
 Changed the weight class values to conform to Google Fonts guidelines. The heaviest 9 weights have been assigned to weight classes 100--900, whereas the lightest three were arbitrarily called 1, 25, and 50. While this prohibits the latter from being ingested into Google Fonts as instances, they can still be accessed via the variable font, or downloaded from GitHub.
 
