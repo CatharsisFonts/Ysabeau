@@ -40,7 +40,7 @@ def shrink(
     options.features = ",".join(
         freezeFeatures
     )  # comma-separated list of OpenType feature tags, e.g. 'smcp,c2sc,onum'
-    options.script = "latn"  # OpenType script tag, e.g. 'cyrl' (default: '%(default)s')
+    options.script = None  # OpenType script tag, e.g. 'cyrl' (default: '%(default)s')
     options.lang = None  # OpenType language tag, e.g. 'SRB ' (optional)
     options.zapnames = (
         False  # zap glyphnames from the font ('post' table version 3, .ttf only)
