@@ -91,7 +91,7 @@ ttFont = TTFont(sys.argv[-1])
 shrink(
     ttFont,
     freezeFeatures=["tnum", "lnum", "ss02"],
-    removeFeatures=["aalt", "onum", "pnum", "smcp", "c2sc"],
+    removeFeatures=["onum", "pnum", "smcp", "c2sc"],
     suffix="Office",
 )
 
@@ -101,7 +101,7 @@ if not "Italic" in sys.argv[-1]:
     shrink(
         ttFont,
         freezeFeatures=["smcp"],
-        removeFeatures=["aalt", "c2sc"],
+        removeFeatures=["c2sc"],
         suffix="SC",
     )
 
@@ -110,6 +110,6 @@ ttFont = TTFont(sys.argv[-1])
 shrink(
     ttFont,
     freezeFeatures=["ss01", "ss02", "lnum"],
-    removeFeatures=["aalt", "pnum", "tnum", "onum"],
+    removeFeatures=["pnum", "tnum", "onum"],
     suffix="Infant",
 )
