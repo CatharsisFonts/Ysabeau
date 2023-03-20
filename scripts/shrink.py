@@ -26,7 +26,13 @@ def font_features(ttFont):
 
 
 def shrink(
-    ttFont, freezeFeatures=[], removeFeatures=[], glyphs=[], replaceNames="", suffix=""
+    ttFont,
+    freezeFeatures=[],
+    removeFeatures=[],
+    glyphs=[],
+    replaceNames="",
+    locl=[],
+    suffix="",
 ):
 
     # Freeze features
@@ -54,10 +60,32 @@ def shrink(
     options.report = False  # report languages, scripts and features in font
     options.names = False  # output names of remapped glyphs during processing
     options.verbose = True
+
+    # Normal settings
     remapByOTL = RemapByOTL(options)
     remapByOTL.ttx = ttFont
     remapByOTL.remapByOTL()
     remapByOTL.renameFont()
+
+    # locl Feature
+    for script, language in locl:
+        options = FreezeOptions()
+        options.inpath = ""
+        options.outpath = ""
+        options.features = "locl"
+        options.script = script
+        options.lang = language
+        options.zapnames = False
+        options.rename = False
+        options.usesuffix = suffix
+        options.replacenames = replaceNames
+        options.info = True
+        options.report = False
+        options.names = False
+        options.verbose = True
+        remapByOTL = RemapByOTL(options)
+        remapByOTL.ttx = ttFont
+        remapByOTL.remapByOTL()
 
     # Subset
     features = list(set(font_features(ttFont)) - set(removeFeatures))
@@ -111,5 +139,6 @@ shrink(
     ttFont,
     freezeFeatures=["ss01", "ss02", "lnum"],
     removeFeatures=["pnum", "tnum", "onum"],
+    locl=[["cyrl", "BGR"]],
     suffix="Infant",
 )
