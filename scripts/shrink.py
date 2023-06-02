@@ -123,6 +123,7 @@ shrink(
     suffix="Office",
 )
 
+
 # SC
 if not "Italic" in sys.argv[-1]:
     ttFont = TTFont(sys.argv[-1])
