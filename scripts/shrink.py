@@ -34,7 +34,6 @@ def shrink(
     locl=[],
     suffix="",
 ):
-
     # Freeze features
 
     class FreezeOptions(object):
@@ -95,6 +94,7 @@ def shrink(
         glyph_names=True,
         name_legacy=True,
         name_languages="*",
+        notdef_outline=True,
     )
     subsetter = Subsetter(options=options)
 
