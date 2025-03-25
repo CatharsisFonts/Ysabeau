@@ -18,6 +18,9 @@ To contribute to the project, contact Christian Thalmann (see below).
 
 ChangeLog
 
+2025-03-25 (v2.006)
+Expanded glyph coverage to include the Pan-African and IPA glyph sets in Glyphs app, as well as all symbols offered on ipa.type.it.
+
 2023-02-02 (v2.000)
 Had to change the weight class values and instance names again because the v1.004 ones did not, in fact, conform to Google Fonts guidelines. The lightest two weights are now called ExtraThin and Thin and assigned to weight classes 1 and 50, whereas the heaviest weight is called ExtraBlack and assigned to weight class 1000.
 
